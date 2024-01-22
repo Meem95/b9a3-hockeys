@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                btnColor: '#E76F51',
+               'red-color': '#FF4240',
+               'progressColor': '#13131899',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+       .font-manrope{
+        font-family: 'Manrope', sans-serif;
+       }
+      </style>
+</head>
+<body class="font-manrope">
+    <!--Header Start-->
+    <header class="container mx-auto max-w-screen-xl">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+              <li><a class=" text-[#424247]">Home</a></li>
+              <li><a class=" text-[#424247]">About</a></li>
+              <li><a class=" text-[#424247]">Pages</a></li>
+              <li><a class=" text-[#424247]">Blog</a></li>
+              <li><a class=" text-[#424247]">Contact</a></li>
+            </ul>
+          </div>
+          <a class=" btn-ghost lg:text-4xl text-2xl font-extrabold m-0">Hockey<span class="text-red-color ">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class=" text-[#424247]">Home</a></li>
+            <li><a class=" text-[#424247]">About</a></li>
+            <li><a class=" text-[#424247]">Pages</a></li>
+            <li><a class=" text-[#424247]">Blog</a></li>
+            <li><a class=" text-[#424247]">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-3">
+          <i class="fas fa-search text-[#89898B]"></i>
+          <a class="btn bg-red-color text-white font-bold text-xl">Get Ticket</a>
+        </div>
+      </div>
+    </header>
+    <!--Main Start-->
+    <main class="container mx-auto max-w-screen-xl">
+      <!--Banner Start-->
+      <section>
+        <div class="carousel w-full relative">
+          <!--Slider One-->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="border-t-neutral-50">❮</a> 
+              <a href="#slide2" class="" >❯</a>
+            </div>
+          </div> 
+          <!--Slider two-->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class=" ">❮</a> 
+                <a href="#slide3" class="">❯</a>
+              </div>
+          </div> 
+        </div>
+          <div class="bg-black text-white absolute lg:right-[11rem] p-8 lg:max-w-[40%] lg:-mt-[13rem] rounded-2xl">
+            <h3 class="font-extrabold text-2xl">Meet all the heroes from the field</h3>
+            <p class="text-base font-medium opacity-50">Meet all the heroes fr om the field, where experts unite to tackle challenges head-on, sharing knowledge and experiences to empower one another. </p>
+          </div>
+      </section>
+      <!---Professional Hockey Club Section-->
+      <section>
+        <hr class=" lg:mt-12 md:mt-56 mt-72 border-dashed">
+        <div class=" text-center lg:mt-10 mt-8">
+          <h2 class="text-4xl mb-5 font-extrabold">
+            Professional Hockeys Club
+          </h2>
+          <p class=" lg:max-w-3xl mx-auto mb-10">
+            The Professional Hockey Club is a premier sports organization dedicated to the thrilling world of ice hockey. Comprising skilled athletes and passionate fans, fostering a dynamic community united by the love of the game.
+          </p>
+      </div>
+      <hr class=" mb-2 border-dashed">
+      <div class="flex lg:flex-row flex-col justify-evenly mt-10 gap-8">
+        <!--First Progressbar-->
+        <div class="text-center lg:w-[25%] space-y-4">
+          <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
+          <h4 class="font-semibold text-xl">Prayer Facility</h4>
+          <p class="text-progressColor">A dedicated prayer facility provides a serene and inclusive space for individuals to practice their faith.</p>
+        </div>
+        <!--Second Progressbar-->
+        <div class="text-center lg:w-[25%] space-y-4 ">
+          <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+          <h4 class="font-semibold text-xl">Prayer Facility</h4>
+          <p class="text-progressColor">A dedicated prayer facility provides a serene and inclusive space for individuals to practice their faith.</p>
+        </div>
+        <!--Third Progressbar-->
+        <div class="text-center lg:w-[25%] space-y-4">
+          <div class="radial-progress text-amber-500" style="--value:90;" role="progressbar">90%</div>
+          <h4 class="font-semibold text-xl">Prayer Facility</h4>
+          <p class="text-progressColor">A dedicated prayer facility provides a serene and inclusive space for individuals to practice their faith.</p>
+        </div>
+        <!--Fourth Progressbar-->
+        <div class="text-center lg:w-[25%] space-y-4">
+          <div class="radial-progress text-sky-600" style="--value:80;" role="progressbar">80%</div>
+          <h4 class="font-semibold text-xl">Prayer Facility</h4>
+          <p class="text-progressColor">A dedicated prayer facility provides a serene and inclusive space for individuals to practice their faith.</p>
+        </div>
+       
+      </div>
+      <hr class="mt-14 mb-2 border-dashed">
+      </section>
+    </main>
+    
+</body>
+</html>
