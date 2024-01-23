@@ -34,7 +34,7 @@
 </head>
 <body class="font-manrope">
     <!--Header Start-->
-    <header class="container mx-auto max-w-screen-xl">
+    <header class="container mx-auto max-w-screen-xl lg:my-6">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -42,7 +42,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
-              <li><a class=" text-[#424247]">Home</a></li>
+              <li><a class="  text-red-color">Home</a></li>
               <li><a class=" text-[#424247]">About</a></li>
               <li><a class=" text-[#424247]">Pages</a></li>
               <li><a class=" text-[#424247]">Blog</a></li>
@@ -53,14 +53,14 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a class=" text-[#424247]">Home</a></li>
+            <li><a class=" text-red-color">Home</a></li>
             <li><a class=" text-[#424247]">About</a></li>
             <li><a class=" text-[#424247]">Pages</a></li>
             <li><a class=" text-[#424247]">Blog</a></li>
             <li><a class=" text-[#424247]">Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end gap-3">
+        <div class="navbar-end gap-8">
           <div class=" hidden lg:block">
             <i class="fas fa-search text-[#89898B]"></i>
           </div>
@@ -76,18 +76,26 @@
         <div class="carousel w-full relative">
           <!--Slider One-->
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="images/1.png" class="w-full" />
+            <img src="images/1.png" class="w-full lg:h-[550px]" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="border-t-neutral-50">❮</a> 
-              <a href="#slide2" class="" >❯</a>
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle" >❯</a>
             </div>
           </div> 
           <!--Slider two-->
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="images/1.png" class="w-full" />
+            <img src="images/football.jpg" class="w-full lg:h-[550px]" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class=" ">❮</a> 
-                <a href="#slide3" class="">❯</a>
+                <a href="#slide1" class=" btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+          </div> 
+          <!--Slider Three-->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/f2.jpg" class="w-full lg:h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class=" btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
           </div> 
         </div>
@@ -103,7 +111,7 @@
           <h2 class="text-4xl mb-5 font-extrabold">
             Professional Hockeys Club
           </h2>
-          <p class=" lg:max-w-3xl mx-auto mb-10">
+          <p class=" lg:max-w-3xl mx-auto mb-10 p-2 text-progressColor font-medium">
             The Professional Hockey Club is a premier sports organization dedicated to the thrilling world of ice hockey. Comprising skilled athletes and passionate fans, fostering a dynamic community united by the love of the game.
           </p>
         </div>
@@ -111,25 +119,25 @@
       <div class="flex lg:flex-row flex-col justify-evenly mt-10 gap-8">
         <!--First Progressbar-->
         <div class="text-center lg:w-[25%] space-y-4">
-          <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
+          <div class="radial-progress text-red-600" style="--value:87;" role="progressbar"><a class="text-black font-extrabold text-xl">87%</a></div>
           <h4 class="font-semibold text-xl">Prayer Facility</h4>
           <p class="text-progressColor">A dedicated prayer facility provides a serene and inclusive space for individuals to practice their faith.</p>
         </div>
         <!--Second Progressbar-->
         <div class="text-center lg:w-[25%] space-y-4 ">
-          <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+          <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><a class="text-black font-extrabold text-xl">95%</a></div>
           <h4 class="font-semibold text-xl">Experienced Coach</h4>
           <p class="text-progressColor">A dedicated Experienced Coach provides a serene and inclusive space for individuals to practice their faith.</p>
         </div>
         <!--Third Progressbar-->
         <div class="text-center lg:w-[25%] space-y-4">
-          <div class="radial-progress text-amber-500" style="--value:90;" role="progressbar">90%</div>
+          <div class="radial-progress text-amber-500" style="--value:90;" role="progressbar"><a class="text-black font-extrabold text-xl">90%</a></div>
           <h4 class="font-semibold text-xl">Senior Player</h4>
           <p class="text-progressColor">A dedicated Senior Player provides a serene and inclusive space for individuals to practice their faith.</p>
         </div>
         <!--Fourth Progressbar-->
         <div class="text-center lg:w-[25%] space-y-4">
-          <div class="radial-progress text-sky-600" style="--value:80;" role="progressbar">80%</div>
+          <div class="radial-progress text-sky-600" style="--value:80;" role="progressbar"><a class="text-black font-extrabold text-xl">80%</a></div>
           <h4 class="font-semibold text-xl">Training Ground</h4>
           <p class="text-progressColor">A dedicated Training Ground provides a serene and inclusive space for individuals to practice their faith.</p>
         </div>
@@ -143,7 +151,7 @@
           <h2 class="text-4xl mb-5 font-extrabold">
             Program Sections
           </h2>
-          <p class=" lg:max-w-3xl mx-auto mb-10">
+          <p class=" lg:max-w-3xl mx-auto mb-10 text-progressColor p-2 font-medium">
            Program sections refer to distinct parts or segments within a computer program's code, each serving a specific function or containing related instructions for efficient execution and organization.
           </p>
       </div>
@@ -156,11 +164,11 @@
             <h2 class="card-title text-2xl font-extrabold">Junior Program</h2>
             <p class="lg:text-lg text-sm">A junior program is an entry-level initiative offering foundational experiences for early-career individuals in fields like programming.</p>
             <div class="card-actions justify-start">
-              <button class="font-bold bg-red-color border-0 text-white lg:h-12 h-8 px-4 rounded-lg">Register Now!</button>
+              <button class="font-bold bg-red-color border-0 text-white lg:h-12 h-8 px-4 rounded-lg">Register Now</button>
             </div>
           </div>
           <figure class="lg:w-[570px]"><img src="images/2.png" alt="Shoes" />
-             <div class="absolute inset-0 bg-black opacity-30 rounded-xl"></div>
+             <div class="absolute inset-0 bg-black opacity-20 rounded-xl"></div>
           </figure>
         </div>
          <!---Program Two---->
@@ -169,11 +177,11 @@
             <h2 class="card-title text-2xl font-extrabold">Teenager Program</h2>
             <p class="lg:text-lg text-sm">The Teenager Program aims to empower adolescents by providing a platform for skill development, mentorship, and personal growth.</p>
             <div class="card-actions justify-start ">
-              <button class="font-bold bg-red-color border-0 text-white lg:h-12 h-8 px-4 rounded-lg">Register Now!</button>
+              <button class="font-bold bg-red-color border-0 text-white lg:h-12 h-8 px-4 rounded-lg">Register Now</button>
             </div>
           </div>
           <figure class="lg:w-[570px]"><img src="images/3.png" alt="Shoes" />
-             <div class="absolute inset-0 bg-black opacity-30 rounded-xl "></div>
+             <div class="absolute inset-0 bg-black opacity-20 rounded-xl "></div>
           </figure>
         </div>
       </div>
@@ -184,11 +192,11 @@
             <h2 class="card-title text-2xl font-extrabold">Professional Program</h2>
             <p class="lg:text-lg text-sm">A professional program offers specialized training and education tailored to enhance skills and knowledge in a specific field.</p>
             <div class="card-actions justify-start ">
-              <button class="font-bold bg-red-color border-0 text-white lg:h-12 h-8 px-4 rounded-lg">Register Now!</button>
+              <button class="font-bold bg-red-color border-0 text-white lg:h-12 h-8 px-4 rounded-lg">Register Now</button>
             </div>
           </div>
           <figure ><img class="lg:h-auto h-[250px]"src="images/4.png" alt="Shoes" />
-             <div class="absolute inset-0 bg-black opacity-30 rounded-xl "></div>
+             <div class="absolute inset-0 bg-black opacity-20 rounded-xl "></div>
           </figure>
         </div>
         
@@ -202,7 +210,7 @@
         <h2 class="text-4xl mb-5 font-extrabold text-black">
           Our New Products
         </h2>
-        <p class=" lg:max-w-3xl mx-auto mb-10">
+        <p class=" lg:max-w-3xl mx-auto mb-10 text-progressColor p-2 font-medium">
           Introducing our innovative new products, designed to elevate your experience and meet your evolving needs with cutting-edge features and exceptional quality.
         </p>
     </div>
@@ -345,7 +353,7 @@
         <h2 class="text-4xl mb-5 font-extrabold text-black">
           Clients Question
         </h2>
-        <p class=" lg:max-w-3xl mx-auto mb-10">
+        <p class=" lg:max-w-3xl mx-auto mb-10 text-progressColor p-2 font-medium">
           A concise and informative segment addressing key inquiries and concerns from clients, fostering clarity and understanding in our communication.
         </p>
       </div>
@@ -372,7 +380,8 @@
               Hockey Training
             </div>
             <div class="collapse-content"> 
-              <p>hello</p>
+              <p>
+                Embark on a journey of excellence with our Hockey Training program. Elevate your skills, refine techniques, and enhance your performance on the ice.</p>
             </div>
           </div>
           <div class="collapse collapse-plus join-item border border-base-300">
@@ -381,7 +390,8 @@
               Private Lessons
             </div>
             <div class="collapse-content"> 
-              <p>hello</p>
+              <p>
+                Elevate your skills with personalized attention through private lessons. Our tailored one-on-one sessions offer a focused learning experience, allowing you to progress at your own pace. </p>
             </div>
           </div>
           <div class="collapse collapse-plus join-item border border-base-300">
@@ -390,7 +400,7 @@
               Ski Touring
             </div>
             <div class="collapse-content"> 
-              <p>hello</p>
+              <p>Embark on an exhilarating adventure with ski touring, where the untouched beauty of snow-covered landscapes awaits. </p>
             </div>
           </div>
           <div class="collapse collapse-plus join-item border border-base-300">
@@ -399,7 +409,8 @@
               Booking
             </div>
             <div class="collapse-content"> 
-              <p>hello</p>
+              <p>
+                "Booking made simple! Experience hassle-free reservations with our user-friendly platform. Unlock a world of convenience and secure your spot effortlessly. </p>
             </div>
           </div>
           <div class="collapse collapse-plus join-item border border-base-300">
@@ -408,7 +419,7 @@
               Pricings
             </div>
             <div class="collapse-content"> 
-              <p>hello</p>
+              <p>Explore our transparent and competitive pricings tailored to suit your needs. Whether you're an individual, small business, or enterprise, our pricing plans offer flexibility and value. Experience quality services without breaking the bank.</p>
             </div>
           </div>
         </div>
@@ -425,7 +436,7 @@
           <h2 class="text-4xl mb-5 font-extrabold text-black">
             Get In Touch
           </h2>
-          <p class=" lg:max-w-3xl mx-auto mb-10">
+          <p class=" lg:max-w-3xl mx-auto mb-10 text-progressColor p-2">
             Our dedicated team is ready to assist you with any inquiries, feedback, or support you may need. Feel free to reach out, and let's connect for a personalized and efficient interaction. 
           </p>
         </div>
@@ -462,32 +473,32 @@
         </div>
         <div class="flex-1">
           <div class="flex flex-col lg:flex-row justify-around p-2">
-            <div class="space-y-2">
+            <div class="space-y-2 mt-3">
               <p class="text-xl font-bold">Your Name</p>
               <input type="text" class="border-none bg-[#13131805] lg:w-96 w-full p-4 rounded-xl focus:outline-none" placeholder="Enter your full name">
             </div>
-            <div class="space-y-2">
+            <div class="space-y-2 mt-3">
               <p  class="text-xl font-bold">Your Email</p>
               <input type="text" class="border-none bg-[#13131805] lg:w-96 w-full p-4 rounded-xl focus:outline-none" placeholder="Enter your email">
             </div>
           </div>
-          <div class="flex flex-col lg:flex-row justify-around mt-6 p-2">
-            <div class="space-y-2">
+          <div class="flex flex-col lg:flex-row justify-around lg:mt-6  p-2">
+            <div class="space-y-2 mt-3">
               <p  class="text-xl font-bold">Subject</p>
               <input type="text" class="border-none bg-[#13131805] lg:w-96 w-full p-4 rounded-xl focus:outline-none " placeholder="Enter your subject">
             </div>
-            <div class="space-y-2">
+            <div class="space-y-2 mt-3">
               <p  class="text-xl font-bold">Phone Number</p>
               <input type="text" class="border-none bg-[#13131805] lg:w-96 w-full p-4 rounded-xl focus:outline-none" placeholder="Enter your phone number">
             </div>
           </div>
-          <div class="flex flex-col lg:flex-row lg:px-8 mt-6 p-2">
-            <div class="space-y-2">
+          <div class="flex flex-col lg:flex-row lg:px-8 lg:mt-6 p-2">
+            <div class="space-y-2 mt-3">
               <p class="text-xl font-bold">Message</p>
               <textarea placeholder="Write your message" class="textarea border-none w-full bg-[#13131805] lg:w-[800px] h-[300px;] p-6 rounded-xl focus:outline-none" ></textarea>
             </div>
           </div>
-          <div class="flex flex-col lg:flex-row lg:px-8 mt-6 p-2"><button class="btn bg-red-color w-full text-white lg:w-[800px]">Send Message</button></div>
+          <div class="flex flex-col lg:flex-row lg:px-8 lg:mt-6 mt-3 p-2"><button class="btn bg-red-color w-full text-white lg:w-[800px]">Send Message</button></div>
           
           </div>
         </div>
